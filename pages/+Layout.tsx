@@ -1,10 +1,10 @@
 import { ParentProps } from "solid-js";
 
-export function Layout({ children }: ParentProps) {
+export function Layout(props: ParentProps) {
     return (
         <>
             <h1>ROOT LEVEL LAYOUT</h1>
-            {children}
+            {props.children}
         </>
     );
 }
